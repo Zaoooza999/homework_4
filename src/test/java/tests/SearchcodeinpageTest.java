@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class searchcodeinpage {
+public class SearchcodeinpageTest {
 
     @BeforeAll
     static void setupEnvironment() {
@@ -24,7 +24,7 @@ public class searchcodeinpage {
         $$("li").findBy(text("Soft assertions")).shouldHave(text("Soft assertions"));
         $$("li").findBy(text("Soft assertions")).$("A").click();
         $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(text("ExtendWith"));
-        sleep(5000);
+        sleep(5001);
 
 
 
