@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SearchInPage {
+public class searchcodeinpage {
 
     @BeforeAll
     static void setupEnvironment() {
