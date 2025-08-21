@@ -33,8 +33,6 @@ public class SearchcodeinpageTest {
                 }
                 """;
         open("/selenide/selenide");
-        executeJavaScript("$('footer').remove();");
-        executeJavaScript("$('#fixedban').remove();");
         $("#wiki-tab").click();
         $$("li").findBy(text("Soft assertions")).shouldHave(text("Soft assertions"));
         $$("li").findBy(text("Soft assertions")).$("A").click();
