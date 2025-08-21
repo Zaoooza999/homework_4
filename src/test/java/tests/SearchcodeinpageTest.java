@@ -37,16 +37,8 @@ public class SearchcodeinpageTest {
         $$("li").findBy(text("Soft assertions")).shouldHave(text("Soft assertions"));
         $$("li").findBy(text("Soft assertions")).$("A").click();
         sleep(5000);
-        $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(cssClass("pl-c1"));
-        //$$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(cssClass("highlight highlight-source-java notranslate position-relative overflow-auto"));
-
-        //$$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldBe(visible);
-        //$$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(text(Junit5example));
-
-
-
-
-
+        $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldBe(visible);
+        $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(text(Junit5example));
     }
 
 }
