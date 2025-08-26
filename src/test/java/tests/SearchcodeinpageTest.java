@@ -19,7 +19,7 @@ public class SearchcodeinpageTest {
 
     @Test
     void fillFormTest() {
-        String Junit5example = """
+        String junit5Example = """
                 @ExtendWith({SoftAssertsExtension.class})
                 class Tests {
                   @Test
@@ -38,7 +38,7 @@ public class SearchcodeinpageTest {
         $$("li").findBy(text("Soft assertions")).$("A").click();
         sleep(5000);
         $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldBe(visible);
-        $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(text(Junit5example));
+        $$(".markdown-heading").findBy(text("JUnit5")).sibling(0).shouldHave(text(junit5Example));
     }
 
 }
